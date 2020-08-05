@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.App-header {
+  background: url("./assets/hero.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.menu {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-right: 4rem;
+}
+.login-menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.grid {
+  background: url("./assets/dashboard-hero.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.nav-button {
+  width: 100%;
+
+  display: flex;
+  margin-right: 5rem;
+
+  justify-content: flex-end;
+}
+/* .card-list-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 385px;
+  margin: 15px;
+  transition: transform 0.3s;
+  border-radius: 10px;
+} */
+button {
+  padding: 6px 12px;
+  font-size: 1.5rem;
+  background: none;
+  border: 1px solid #1129c5;
+  border-radius: 6px;
+  color: #1129c5;
+}
+
+button:hover {
+  background-color: #404fb3;
+  color: white;
+  cursor: pointer;
+}
+.card-button:hover {
+  background-color: #404fb3 !important;
+  color: white;
+}
+.inputUpdate {
+  font-size: 1rem;
+  margin-left: 1rem;
+  padding: 0.06rem;
+}
+.userCard {
+  width: 80%;
+  opacity: 0.7;
+}

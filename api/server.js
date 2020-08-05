@@ -29,6 +29,7 @@ const sessionConfig = {
   resave: false,
   saveUninitialized: false,
 
+  //now session will be created in our db, not in a memory
   store: new knexSessionStore({
     knex: require("../database/dbConfig.js"),
     tablename: "sessions",

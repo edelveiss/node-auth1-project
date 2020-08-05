@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/edelveiss/node-auth1-project#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "connect-session-knex": "^1.7.3",
     "cors": "^2.8.5",
@@ -28,6 +29,8 @@
     "helmet": "^4.0.0",
     "knex": "^0.21.2",
     "knex-cleaner": "^1.3.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {

@@ -17,6 +17,7 @@ const Users = require("../users/users-model.js");
 //----------------------------------------------------------------------------//
 router.post("/register", async (req, res) => {
   const user = req.body;
+
   //   const ROUNDS = process.env.HASH_ROUNDS || 8;
   //   const hash = bcrypt.hashSync(user.password, ROUNDS);
   const hash = bcrypt.hashSync(user.password, 8);
@@ -24,9 +25,10 @@ router.post("/register", async (req, res) => {
 
   try {
     const saved = await Users.add(user);
+
     res.status(201).json(saved);
   } catch (err) {
-    res.status(500).json(error);
+    res.status(500).json(err);
   }
 });
 
