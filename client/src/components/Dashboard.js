@@ -13,9 +13,8 @@ function Dashboard(props) {
   //   const [friends, setFriends] = useState([]);
   const dispatch = useDispatch();
   const [user, setUser] = useState({
-    name: "",
-    age: "",
-    email: "",
+    username: "",
+    role: "",
   });
   useEffect(() => {
     props.getData();
@@ -69,6 +68,7 @@ function Dashboard(props) {
             Home
           </button>
         </Link>
+        {/** 
         <Link to="/add-friend">
           <button
             style={{
@@ -81,6 +81,7 @@ function Dashboard(props) {
             Add New Friend
           </button>
         </Link>
+*/}
         <Link>
           <button
             onClick={logout}

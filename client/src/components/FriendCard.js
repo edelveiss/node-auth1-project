@@ -31,8 +31,9 @@ function FriendCard(props) {
     <Grid item xs={6} sm={4} style={{ marginTop: "2rem" }}>
       {toggleEdit ? (
         <Card className="userCard">
-          <h2>{props.friend.username}</h2>
-
+          <h2>username: {props.friend.username}</h2>
+          <h2>role: {props.friend.role === 1 ? "Admin" : "User"}</h2>
+          {/** 
           <CardActions style={{ marginLeft: "25%" }}>
             <Button
               className="card-button"
@@ -51,6 +52,7 @@ function FriendCard(props) {
               Delete
             </Button>
           </CardActions>
+*/}
         </Card>
       ) : (
         <UpdateForm
