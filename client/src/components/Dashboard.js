@@ -82,7 +82,7 @@ function Dashboard(props) {
           </button>
         </Link>
 */}
-        <Link>
+        <Link to="/">
           <button
             onClick={logout}
             style={{

@@ -6,6 +6,8 @@ export const axiosWithAuth = () => {
   console.log("userSession", userSession);
   return axios.create({
     baseURL: "http://localhost:5000/api",
+
+    //http://127.0.0.1
     // Session: {
     //   //Session: { user: userSession },
     //   user: userSession,

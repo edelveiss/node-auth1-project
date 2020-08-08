@@ -40,9 +40,7 @@ const Login = (props) => {
     axiosWithAuth()
       .post("/auth/login", credentials)
       .then((res) => {
-        console.log("res", res);
-        console.log("res.session", res.session);
-        console.log("res.data", res.config.data);
+        console.log("res.data", res);
         localStorage.setItem("userSession", res.config.data);
         setCredentials({
           username: "",
